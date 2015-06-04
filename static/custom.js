@@ -2,6 +2,7 @@ $( document ).ready(function() {
 	$('.slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		infinite: false,
 		arrows: false,
 		asNavFor: '.slider-nav'
 	});
@@ -9,7 +10,7 @@ $( document ).ready(function() {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider',
-		dots: true,
+		infinite: false,
 		centerMode: true,
 		focusOnSelect: true
 	});
