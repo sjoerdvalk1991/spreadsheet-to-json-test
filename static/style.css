@@ -34,6 +34,19 @@ body {
 	vertical-align: middle;
 }
 
+.button{
+	height: 200px;
+	line-height: 200px;
+	vertical-align: middle;
+	background-color: #de4524;
+}
+
+.button h2{
+	font-size: 25px;
+	color: white;
+	font-family: hallo;
+}
+
 .mtm{
    margin-top: 15px;
 }
