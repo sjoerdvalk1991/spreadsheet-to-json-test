@@ -18,7 +18,7 @@
 		<div class="slide">
 			<section class="row">
 				<ul class="list">
-					<div class="medium-6 small-12 columns mtm" ng-repeat="entry in parsedEntries">
+					<div class="medium-6 small-6 columns mts" ng-repeat="entry in parsedEntries">
 						<li class="list__name  list__name-{{entry['name']}}">
 							<span class="list__content">
 								{{ entry['name'] }} <span>{{ entry['number'] }} </span>
@@ -30,7 +30,7 @@
 		</div>
 		<div class="slide">
 			<ul class="list">
-				<div class="medium-6 small-12 columns mtm" ng-repeat="entry in parsedEntries">
+				<div class="medium-6 small-12 columns mts" ng-repeat="entry in parsedEntries">
 					<h1 class="rules">Regelementen</h1>
 					<li class="list__name  list__name-{{entry['name']}}" ng-if="entry['rules']">
 						<span class="list__content">

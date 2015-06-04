@@ -1,6 +1,7 @@
 var app = angular.module('plunker', []);
 
 app.controller('SuperCtrl', ['$scope', '$http', function($scope,$http) {
+    var totalScore = 0;
     var spreadsheetID = '1yjOuR_qKvU7cHgM2gJE7vHuHHgq1bRrNuOeczVjgjoY';
     var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
     var parse = function(entry) {
@@ -9,6 +10,8 @@ app.controller('SuperCtrl', ['$scope', '$http', function($scope,$http) {
       var rules = entry['gsx$regelsvooreenkanbetalen']['$t'];
       var stripes = entry['gsx$aantal']['$t'];
       var number = stripes.length;
+      $scope.totalScore = $scope.totalScore + number;
+      console.log($scope.totalScore);
       return {
         name: name,
         number: number,
