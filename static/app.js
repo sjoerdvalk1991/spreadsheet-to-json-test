@@ -1,7 +1,8 @@
 var app = angular.module('plunker', []);
 
 app.controller('SuperCtrl', ['$scope', '$http', function($scope,$http) {
-    var url = 'https://spreadsheets.google.com/feeds/list/1lZWwacSVxTD_ciOsuNsrzeMTNAl0Dj8SOrbaMqPKM7U/od6/public/values?alt=json'
+    var spreadsheetID = '1L6C5jGuWvZ4L_oF6M46Sjk0X_jchp1bxwxwZ-MNg240';
+    var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
     var parse = function(entry) {
       console.log(entry);
       var category = entry['gsx$category']['$t'];
