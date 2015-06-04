@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="static/style.css" />
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="static/app.js"></script>
+	</head>
+	<body ng-controller="SuperCtrl">
+
+		<ul>
+	      <li ng-repeat="entry in parsedEntries">
+	        {{ entry['category'] }} <br />
+	        {{ entry['description'] }} <br />
+	        {{ entry['title'] }} <br />
+	        {{ entry['url'] }} <br />
+	      </li>
+	    </ul>
+
+	</body>
+</html>
