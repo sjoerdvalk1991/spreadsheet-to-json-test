@@ -2,18 +2,20 @@
 <html ng-app="plunker">
 	<head>
 		<title></title>
+		<link rel="stylesheet" href="static/fonts/fonts.css" />
 		<link rel="stylesheet" href="static/style.css" />
 		<script src="lib/angular/angular.min.js"></script>
 		<script src="static/app.js"></script>
 	</head>
 	<body ng-controller="SuperCtrl">
-		<ul>
-	      <li ng-repeat="entry in parsedEntries">
-	        {{ entry['category'] }} <br />
-	        {{ entry['description'] }} <br />
-	        {{ entry['title'] }} <br />
-	        {{ entry['url'] }} <br />
-	      </li>
-	    </ul>
+		<section class="container">
+			<ul class="list">
+		      <li class="list__name list__name-{{entry['name']}}" ng-repeat="entry in parsedEntries">
+			      <span class="list__content">
+			        {{ entry['name'] }} <span>{{ entry['number'] }} </span>
+			      </span>
+		      </li>
+		    </ul>
+		</section>    
 	</body>
 </html>

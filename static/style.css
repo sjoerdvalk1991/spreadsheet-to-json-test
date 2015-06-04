@@ -1,1 +1,66 @@
-style.css
+html {
+   height: 100%;
+   background-color: #fb3;
+}
+
+body {
+   display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+   display: -moz-box;      /* OLD: Firefox (buggy) */
+   display: -ms-flexbox;   /* MID: IE 10 */
+   display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+   display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+   -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+   -ms-flex-align: center; /* You know the drill now… */
+   -webkit-align-items: center;
+   align-items: center;
+
+   -webkit-box-pack: center; -moz-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+
+   margin: 0;
+   height: 100%;
+   width: 100% /* needed for Firefox */
+}
+
+
+body {
+   display: flex;
+   justify-content: center;
+}
+
+.container{
+	display: flex;
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.list{
+	margin-left: 20px;
+}
+
+.list__name{
+   /* removed other styles to save space */
+   -prefix-box-flex: 1; /* old spec webkit, moz */
+   flex: 1;
+   flex-grow: 1;
+   height: 250px;
+   width: 300px;
+   font-size: 2em;
+   font-family: hallo-heavy;
+   display: inline-block;
+   text-align: center;
+   background-color: #340345;
+   margin: 10px;
+   color: white;
+
+}
+
+.list__content{
+	line-height: 250px;
+	vertical-align: middle;
+}

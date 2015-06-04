@@ -1,0 +1,14 @@
+@font-face {
+    font-family: hallo;
+    src: url(Hallo-Sans/1.otf);
+}
+
+@font-face {
+    font-family: hallo-light;
+    src: url(Hallo-Sans/2.otf);
+}
+
+@font-face {
+    font-family: hallo-heavy;
+    src: url(Hallo-Sans/3.otf);
+}
