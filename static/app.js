@@ -1,4 +1,4 @@
-var app = angular.module('plunker', []);
+var app = angular.module('beercounter', []);
 
 app.controller('SuperCtrl', ['$scope', '$http', function($scope,$http) {
     var totalScore = 0;

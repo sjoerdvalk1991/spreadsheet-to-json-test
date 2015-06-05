@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="plunker">
+<html ng-app="beercounter">
 	<head>
-	<title></title>
+	<title>Biermeter</title>
 	<link rel="stylesheet" href="static/fonts/fonts.css" />
 	<link rel="stylesheet" href="static/style.css" />
 	<link rel="stylesheet" href="lib/foundation/css/foundation.min.css" />
@@ -18,9 +18,10 @@
 		<div class="slide">
 			<section class="row">
 				<ul class="list">
-					<div class="medium-6 small-6 columns mts" ng-repeat="entry in parsedEntries">
+					<div class="medium-4 small-6 columns mts" ng-repeat="entry in parsedEntries">
 						<li class="list__name  list__name-{{entry['name']}}">
 							<span class="list__content">
+								<img class="list__image" src="http://dummyimage.com/200x200/000/fff">
 								{{ entry['name'] }} <span>{{ entry['number'] }} </span>
 							</span>
 						</li>
@@ -30,7 +31,7 @@
 		</div>
 		<div class="slide">
 			<ul class="list">
-				<div class="medium-6 small-12 columns mts" ng-repeat="entry in parsedEntries">
+				<div class="medium-6 small-6 columns mts" ng-repeat="entry in parsedEntries">
 					<h1 class="rules">Regelementen</h1>
 					<li class="list__name  list__name-{{entry['name']}}" ng-if="entry['rules']">
 						<span class="list__content">
